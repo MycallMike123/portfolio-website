@@ -170,10 +170,41 @@
 
 <!-- The testimonials section -->
 
-	<section class="testimonials" id="testimonials">
-		<h2 class="heading"><span>Testimonials</span></h2>
-		
-	</section>
+<section class="testimonials" id="testimonials">
+  <h2 class="heading"><span>Testimonials</span></h2>
+
+  <div class="testimonial-slider">
+    <div class="slides">
+      <!-- Slide 1 -->
+      <div class="slide active">
+        <img src="images/sarah.jpg" alt="Sarah M." class="testimonial-img">
+        <p>"Working with you was an absolute pleasure. Your attention to detail and professionalism are unmatched. You delivered the website ahead of schedule and exceeded expectations!"</p>
+        <h3>Sarah M., Startup Founder</h3>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide">
+        <img src="images/james.jpg" alt="James O." class="testimonial-img">
+        <p>"The graphics and branding you created were stunning. Everyone compliments our new look. You're my go-to designer from now on!"</p>
+        <h3>James O., Marketing Manager</h3>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide">
+        <img src="images/lillian.jpg" alt="Dr. Lillian T." class="testimonial-img">
+        <p>"Thanks to your data analysis, our research paper was accepted with praise! You helped us find insights we hadn't noticed before."</p>
+        <h3>Dr. Lillian T., Research Scientist</h3>
+      </div>
+    </div>
+
+    <div class="dots">
+      <span class="dot active" onclick="changeSlide(0)"></span>
+      <span class="dot" onclick="changeSlide(1)"></span>
+      <span class="dot" onclick="changeSlide(2)"></span>
+    </div>
+  </div>
+</section>
+
 
 
 
@@ -270,6 +301,28 @@
 		loop: true
 	});
 	</script>
+
+	<script>
+	let currentIndex = 0;
+	const slides = document.querySelectorAll(".slide");
+	const dots = document.querySelectorAll(".dot");
+
+	function changeSlide(index) {
+		slides.forEach((slide, i) => {
+		slide.classList.toggle("active", i === index);
+		dots[i].classList.toggle("active", i === index);
+		});
+		currentIndex = index;
+	}
+
+	function autoSlide() {
+		currentIndex = (currentIndex + 1) % slides.length;
+		changeSlide(currentIndex);
+	}
+
+	setInterval(autoSlide, 5000); // Auto-slide every 5 seconds
+	</script>
+
 
 </body>
 </html>
