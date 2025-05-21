@@ -9,7 +9,7 @@
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 
-	<link rel="stylesheet" href="css/PortfolioStyle.css">
+	<link rel="stylesheet" href="css/styles.css">
 
 
 </head>
@@ -42,15 +42,14 @@
 			<p>Thank you for stopping by. It's awesome to have you on my website</p>
 
 			<div class="social-media">
-				<a href="#"><i class='bx bxl-facebook' ></i></a>
-				<a href="#"><i class='bx bxl-twitter' ></i></a>
-				<a href="#"><i class='bx bxl-instagram-alt' ></i></a>
-				<a href="#"><i class='bx bxl-linkedin' ></i></a>
-				
+				<a href="#"><i class='bx bxl-facebook'></i></a>
+				<a href="#"><i class='bx bxl-twitter'></i></a>
+				<a href="#"><i class='bx bxl-instagram-alt'></i></a>
+				<a href="#"><i class='bx bxl-linkedin'></i></a>
 			</div>
+
 			<a href="design/michaelcv.pdf" download class="btn">Download CV</a>
-	</div>
-		
+		</div>
 	</section>
 
 <!--about me section-->
@@ -62,7 +61,13 @@
 				</div>
 				<div class="about-col-2">
 					<h1 class="heading">About<span>-Me</span></h1>
-					<p class="paragraph">I have good interpersonal skills with the ability to work independently under minimal supervision. I am organized and able to respect deadlines. I also possess good analytic and communication skills. I can also multitask. I am a team player and good in adapting to new environment by interaction, consultations and building relationships with all people. I have knowledge of computer packages, I am conversant with EPI-INFO, SPSS, STATA, JMP, EXCEL, PYTHON, R, PHP and ODK.</p>
+					<p class="paragraph">
+						Full-stack Software Developer with a solid foundation in Python (Flask, Django), C programming, Node.js, and SQL, coupled with expertise in DevOps (Networking, Security, Webstack, Bash Scripting).
+						Adept at building and deploying scalable web applications, developing APIs, and managing databases.
+						Alongside software development, I have a strong background in data analysis, using tools like SPSS, STATA, and EXCEL to derive actionable insights.
+						My combined expertise in software engineering and data analytics enables me to deliver efficient, data-driven solutions.
+						Passionate about problem-solving, continuous learning, and driving innovation in tech.
+					</p>
 
 					<div class="tab-title">
 						<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -109,19 +114,19 @@
 				<i class='bx bx-bar-chart-alt'></i>
 				<h3>Data Analysis</h3>
 				<p>Data Analysis, Data Management, Data Quality Control, and Research Analysis</p>
-				<a href="#" class="btn">Read More</a>
+				<a href="services/data-analysis.html" class="btn">Read More</a>
 			</div>
 			<div class="services-box">
 				<i class='bx bx-code-alt' ></i>
 				<h3>Web Development</h3>
 				<p>Design, develop, and maintain end to end high quality websites!</p>
-				<a href="#" class="btn">Read More</a>
+				<a href="services/web-development.html" class="btn">Read More</a>
 			</div>
 			<div class="services-box">
 				<i class='bx bxs-paint' ></i>
 				<h3>Graphic Design</h3>
 				<p>Logo Design and Photoshop Editing</p>
-				<a href="#" class="btn">Read More</a>
+				<a href="services/graphic-design.html" class="btn">Read More</a>
 			</div>
 		</div>
 	</section>
@@ -250,9 +255,21 @@
 	});
 	</script>
 
+
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 
 	<script src="js/script.js"></script>
+
+	<script>
+	const typed = new Typed('.multiple-text', {
+		strings: ['Web Developer', 'Designer', 'Software Engineer', 'Freelancer'],
+		typeSpeed: 100,
+		backSpeed: 60,
+		backDelay: 1000,
+		loop: true
+	});
+	</script>
+
 </body>
 </html>
